@@ -142,22 +142,22 @@ docker --version
 cd backend
 
 # Install dependencies
-npm install
+pnpm install
 
 # Start PostgreSQL container
-npm run db:start
+pnpm run db:start
 
 # Generate Prisma client
-npx prisma generate
+pnpm exec prisma generate
 
 # Run database migrations
-npx prisma migrate dev
+pnpm exec prisma migrate dev
 
 # Seed demo data (optional)
-npm run prisma:seed
+pnpm run prisma:seed
 
 # Start development server
-npm run dev
+pnpm run dev
 ```
 
 ✅ **Backend running at**: `http://localhost:5000`
@@ -486,17 +486,17 @@ VITE_API_URL=http://localhost:5000
 
 ```bash
 # Development
-npm run dev              # Start dev server with hot reload (port 5000)
-npm run build            # Compile TypeScript to JavaScript
-npm start                # Run production build
+pnpm run dev              # Start dev server with hot reload (port 5000)
+pnpm run build            # Compile TypeScript to JavaScript
+pnpm start                # Run production build
 
 # Database
-npm run db:start         # Start PostgreSQL Docker container
-npm run db:stop          # Stop PostgreSQL container
-npx prisma generate      # Generate Prisma client
-npm run prisma:migrate   # Run database migrations
-npm run prisma:seed      # Seed database with demo data
-npm run prisma:studio    # Open Prisma Studio (DB GUI)
+pnpm run db:start         # Start PostgreSQL Docker container
+pnpm run db:stop          # Stop PostgreSQL container
+npx prisma generate # Generate Prisma client
+pnpm run prisma:migrate   # Run database migrations
+pnpm run prisma:seed      # Seed database with demo data
+pnpm run prisma:studio    # Open Prisma Studio (DB GUI)
 ```
 
 ### Frontend Commands
@@ -580,7 +580,7 @@ PORT=5001
 docker ps
 
 # Start container
-npm run db:start
+pnpm run db:start
 
 # Check logs
 docker logs shoes-ecommerce-db
@@ -656,8 +656,8 @@ For in-depth information, refer to these comprehensive guides:
 
 2. **Build & Deploy:**
    ```bash
-   npm run build
-   npm start
+   pnpm run build
+   pnpm start
    ```
 
 3. **Platforms:** Heroku, Railway, DigitalOcean, AWS
